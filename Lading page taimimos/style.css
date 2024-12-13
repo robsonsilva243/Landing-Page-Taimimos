@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Allura', cursive;
+    font-size: 100%;
+    background-color: #A4D8E1; /* Azul bebê */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 204, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Para ocupar toda a largura */
+    margin-bottom: 20px; /* Espaço abaixo do header */
+}
+
+.logo {
+    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    border: 5px solid yellow; /* Borda amarela */
+    border-radius: 50%; /* Arredonda a borda */
+    margin-bottom: 20px; /* Espaço abaixo da logo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para a logo */
+}
+
+.cabecalho-item {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    margin-top: 10px; /* Espaço acima do menu */
+}
+
+.cabecalho-item a {
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s; /* Adiciona transição para o efeito de hover */
+    position: relative; /* Para o efeito de sombra */
+}
+
+.cabecalho-item a:hover {
+    color: #FFCC00; /* Amarelo */
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.8); /* Sombra ao passar o mouse */
+}
+
+.corpo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dentro do corpo */
+}
+
+.sobre, .produtos, .contato, .sobrenos {
+    margin: 20px 0; /* Espaçamento entre seções */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    border: 2px solid rgba(255, 204, 0, 0.5); /* Borda amarela transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para a seção */
+}
+
+.sobre h1, .produtos h1, .contato h1, .sobrenos h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    background-color: white; /* Fundo branco para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 204, 0, 0.5); /* Sombra para os cards */
+    width: 250px; /* Largura fixa dos cards */
+    padding: 15px; /* Espaçamento interno */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+}
+
+.card h2 {
+    margin: 10px 0; /* Espaçamento acima e abaixo do título */
+}
+
+.card p {
+    color: #666; /* Cor do texto do parágrafo */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 204, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #FFCC00; /* Amarelo */
+}
+.contato {
+    margin: 20px 0; /* Espaçamento entre seções */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    border: 2px solid rgba(255, 204, 0, 0.5); /* Borda amarela transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para a seção */
+}
+
+.contato h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos do formulário em coluna */
+    gap: 10px; /* Espaçamento entre os campos do formulário */
+}
+
+.contato input, .contato textarea {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+.contato input:focus, .contato textarea:focus {
+    border-color: #FFCC00; /* Borda amarela ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.contato button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: #FFCC00; /* Fundo amarelo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para o fundo */
+}
+
+.contato button:hover {
+    background-color: #e6b800; /* Cor de fundo mais escura ao passar o mouse */
+}
